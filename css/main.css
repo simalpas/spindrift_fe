@@ -1,0 +1,33 @@
+#splash-container {
+    background-image: url('../images/splash_background.jpg');
+    background-size: fixed;
+    background-position: top;
+}
+
+#splash-logo {
+    margin-top: 7vh;
+}
+
+#product-background {
+    background-image: url('../images/broken_corduroy.jpg');
+    background-size: fixed;
+    background-position: top;
+}
+
+#product-container {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.product-box {
+    height: 40vh;
+}
+
+#whatsapp-splash-button {
+    background-color: #25d366;
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    /* font-size: 1em; */
+}

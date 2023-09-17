@@ -4,82 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spindrift Snowsports</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('background-image.jpg'); /* Replace with your background image URL */
-            background-size: fixed;
-            background-position: top;
-            font-family: Arial, sans-serif;
-        }
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- bootstrap css -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous"
+    >
 
-        .container {
-            text-align: center;
-            position: absolute;
-            top: 35vh;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-
-        .logo {
-            width: 40vh; /* Adjust the logo size as needed */
-            margin-bottom: 20px;
-        }
-
-        .text {
-            font-size: 4em;
-            margin-bottom: 20px;
-        }
-
-        .header {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        .button {
-            background-color: #25d366;
-            border-radius: 5px;
-            border: 2px solid white;
-            padding: 10px 0px;
-            cursor: pointer;
-        }
-
-        .button a {
-            color: white;
-            text-decoration: none; /* Remove default underline */
-            font-size: 1em;
-            padding:0px;
-            margin:0px;
-        }
-    </style>
 </head>
 <body>
+    <!-- bootstrap js -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous"
+    ></script>
 
-    <div class="container">
-        <img src="logo.png" alt="Spindrift Snowsports Logo" class="logo">
-        <div class="text"></div>
-        <div class="button">
-            <a href="https://wa.me/447761209470?text=Hi,%20I%27m%20interested%20in%20booking%20a%20lesson">Contact us via WhatsApp</a>
+
+    <!-- splash container-->
+    <div class="container-fluid vh-100" id="splash-container">
+        <!-- <div class="row"></div> -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col"></div>
+            <!-- column with logo and buttons -->
+            <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3 text-center">
+                <img src="images/logo_resized.png" class="img-fluid w-100" alt="Spindrift Snowsports Logo" id="splash-logo">
+                <!-- Buttons below logo -->
+                <div class="row">
+                    <!-- <div class="col text-center align-center">
+                        <div
+                            class="btn btn-secondary mt-4 w-100 cta-btn"
+                            onClick="window.location.href='https://wa.me/447761209470?text=Hi,%20I%27m%20interested%20in%20booking%20a%20lesson'"
+                        >
+                            Book now
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="btn btn-secondary mt-4 w-100 cta-btn"
+                            onClick="window.location.href='https://wa.me/447761209470?text=Hi,%20I%27m%20interested%20in%20booking%20a%20lesson'"
+                        >
+                            Ask a question
+                        </div>
+                    </div> -->
+                    <div class="col mt-3">
+                        <div
+                            class="fs-4 w-75 py-0 d-block m-auto btn"
+                            id="whatsapp-splash-button"
+                            onClick="window.location.href='https://wa.me/447761209470?text=Hi,%20I%27m%20interested%20in%20booking%20a%20lesson'"
+                        >
+                           BOOK NOW
+                        </div>
+                        </div>
+                </div>
+
+            </div>
+            <div class="col"></div>
         </div>
     </div>
+    <!-- What we do -->
+    <div class="container">
+        <div class="row mt-5"></div>
+        <div class="row mt-5"></div>
+        <div class="row">
+            <div class="col">
+                <img class="d-block m-auto" src="images/ski_pole_plant.png">
+                <h3 class="text-left">Private Lessons</h3>
+                <p class="lead text-justify">
+                    Personal and tailored. Your Instructor will chat to you about what
+                    you want to achieve and help you accomplish your goal. Whether
+                    that be long smooth carves, short snappy turns or just getting
+                    some confidence back on the slopes.
+                </p>
+            </div>
+            <div class="col">
+                <img class="d-block m-auto" src="images/ro_bumps.png">
+                <h3>Performance Days</h3>
+                <p class="lead">
+                    Fun and sociable. Join one of our groups and push your skiing
+                    with friends. There is a varied programme including moguls,
+                    piste performance, and tactics for of piste and deep snow.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="d-block m-auto" src="images/tuning.png">
+                <h3>Ski Tuning Workshops</h3>
+                <p class="lead">
+                    If your skis aren&apos;t properly tuned you
+                    won&apos;t the performance that you are
+                    capable of. We run ski tuning
+                    workshops from the basics of waxing
+                    and edge sharpening, through wax
+                    selection, new ski preparation, and race
+                    preparation using the latest technology
+                    from Holmenkol.
+                </p>
+            </div>
+            <div class="col">
+                <img class="d-block m-auto" src="images/guy_hiking_line.png">
+                <h3>Avalanche Safety Training</h3>
+                <p class="lead">
+                    The beauty of the mountains has
+                    hidden dangers. Learn about snow,
+                    what happens when there is too much
+                    and where not to go. How to be safe of
+                    piste and the danger signs the
+                    professionals look for.
+                </p>
+            </div>
+            <div class="col">
+                <img class="d-block m-auto" src="images/fancy_iron.png">
+                <h3>Ski Servicing</h3>
+                <p class="lead">
+                    Sharp edges, fast bases. Without them
+                    the excitement drifs away. Our state of
+                    the art edging tools, high quality waxes
+                    from Holmenkol, Thermo-jomax hot
+                    box treatment and a loving hand finish
+                    keep your skis (or snowboard) in top
+                    condition.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5"></div>
+    </div>
     
-    <div class="footer">New website coming soon.</div>
+    <!-- Product gallery -->
+    <div class="container-fluid vh-100" id="product-background">
+            <div class="row mt-5"></div>
+            <div class="row mt-5"></div>
+        <div class="container p-3" id="product-container">
+            <div class="row mt-4"></div>
+            <div class="row">
+                <div class="col">
+                    <p class="display-5 text-light">Book a Lesson</p>
+                    <p class="text-light display fw-light fs-5">
+                        Lessons are booked by contacting us via 
+                        <a class="text-success align-bottom" href="https://wa.me/447761209470?text=Hi,%20I%27m%20interested%20in%20booking%20a%20lesson">WhatsApp</a>. 
+                        Let us know when you&apos;d 
+                        like to ski with one of the team and we&apos;ll sort out the rest. 
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4"></div>
+            <div class="row mx-2 gx-0 text-center">
+                <div class="col-1"></div>
+                <div class="col mt-4 bg-light">
+                    <p class="text-light border bg-dark m-0 p-2 fs-4">
+                        3 Hour Private Lesson
+                    </p>
+                    <p class="h1 fw-light mt-3 align-center">
+                        <span class="align-top fs-5">£</span>180
+                    </p>
+                    <hr>
+                    <p class="bg-light px-5 pt-3 text-start product-box">
+                        3 hours gives us enough time to work on a
+                        couple of things in your ski technique. We
+                        can really focus on a couple of areas of
+                        improvement and work with you to build
+                        your understanding and technique. We take
+                        a short hydration break halfway through.
+                    </p>
+                </div>
+                <div class="col bg-light mb-4 border border-secondary">
+                    <p class="text-light border bg-dark p-2 fs-4">
+                        2 Hour Private Lesson
+                    </p>
+                    <p class="h1 fw-light mt-3 align-center">
+                        <span class="align-top fs-5">£</span>135
+                    </p>
+                    <hr>
+                    <p class="bg-light px-5 pt-3 text-start product-box">
+                        Over the course of the lesson you&apos;ll work
+                        with the instructor to develop some drills
+                        and exercises that you can work on to make
+                        changes to your skiing. It&apos;s great for a
+                        confidence boost or as part of a series of
+                        lessons.
+                    </p>
+                </div>
+                <div class="col mt-4 bg-light">
+                    <p class="text-light border bg-dark p-2 fs-4">
+                        6 Hour Private Lesson
+                    </p>
+                    <p class="h1 fw-light mt-3 align-center">
+                        <span class="align-top fs-5">£</span>295
+                    </p>
+                    <hr>
+                    <p class="bg-light px-5 pt-3 text-start product-box">
+                        All day, really focus on you. Ideally let us
+                        know in advance what you are looking for,
+                        this length of time means we can do
+                        multiple video sessions, really nail the drills
+                        and have plenty of time to consolidate the
+                        movements and techniques and
+                        understanding. The 6 hour session will
+                        include breaks for lunch and hydration.
+                    </p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        <div class="row mt-5"></div>
+        </div>
+    </div>
+
 </body>
 </html>
