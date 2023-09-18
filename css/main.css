@@ -17,7 +17,13 @@
 #product-container {
     background-color: rgba(0,0,0,0.3);
     background-size: 100%;
+    border-radius: 5px;
     /* background-position: top; */
+}
+
+.translucent-box {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
 }
 
 #whatsapp-splash-button {
