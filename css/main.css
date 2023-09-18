@@ -16,10 +16,8 @@
 
 #product-container {
     background-color: rgba(0,0,0,0.3);
-}
-
-.product-box {
-    height: 40vh;
+    background-size: 100%;
+    /* background-position: top; */
 }
 
 #whatsapp-splash-button {
