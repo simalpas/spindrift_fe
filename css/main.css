@@ -24,6 +24,7 @@
 
 .about-us-background {
     background: url('../images/snow_ridge.jpg') no-repeat;
+    background-size: cover;
     min-height: 100vh;
 }
 
@@ -42,7 +43,7 @@
 .card-body {
     background-color: rgba(0,0,0,0.6);
     border-radius:10px;
-    min-height: 15em;
+    min-height: 20em;
 }
 
 .card-body button {
