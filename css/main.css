@@ -4,12 +4,8 @@
     background-position: top;
 }
 
-/* #splash-logo {
-    margin-top: 7vh;
-} */
-
 #product-background {
-    background: url('../images/broken_corduroy.jpg') no-repeat;
+    background: url('../images/cordury.jpg') no-repeat;
     background-size: cover;
     /* background-position: top; */
 }
@@ -24,6 +20,37 @@
 .translucent-box {
     background-color: rgba(0,0,0,0.3);
     border-radius: 5px;
+}
+
+.about-us-background {
+    background: url('../images/snow_ridge.jpg') no-repeat;
+    min-height: 100vh;
+}
+
+.card{
+    background: none !important;
+    border: none !important;
+}
+
+.card img{
+    max-height:267px;
+    max-width: 200px;
+    width: auto;
+    height:auto;
+}
+
+.card-body {
+    background-color: rgba(0,0,0,0.6);
+    border-radius:10px;
+    min-height: 15em;
+}
+
+.card-body button {
+    color: white;
+}
+
+.card-body button:hover {
+    color: white;
 }
 
 #whatsapp-splash-button {
